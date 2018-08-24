@@ -6,7 +6,7 @@ body {
 }
 /*  Header  */
 .header {
-  height: 100vh;
+  height: 1000px;
   width: 100vw;
   background-image: url("../img/header-bg.jpg");
   background-size: cover;
@@ -556,6 +556,9 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
+  .header__title {
+    margin-top: 100px;
+  }
   .about {
     text-align: center;
   }
@@ -638,7 +641,7 @@ body {
 }
 @media screen and (max-width: 720px) {
   .header__title {
-    margin-top: 250px;
+    margin-top: 100px;
     font-size: 140px;
   }
   .header__paragraph {
