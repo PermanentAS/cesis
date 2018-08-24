@@ -12,6 +12,8 @@ body {
   background-size: cover;
   text-align: center;
   color: #ffffff;
+  min-width: 600px;
+  min-height: 1000px;
 }
 .header__bar {
   width: 100%;
@@ -67,6 +69,8 @@ body {
   background-color: rgba(41, 43, 50, 0.9);
   z-index: 3;
   display: none;
+  min-width: 600px;
+  min-height: 1000px;
 }
 .header__nav-close {
   position: absolute;
