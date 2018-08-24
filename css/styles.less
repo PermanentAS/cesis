@@ -18,6 +18,8 @@ body{
     background-size: cover;
     text-align: center;
     color: @white-color;
+    min-width: 600px;
+    min-height: 1000px;
 
     &__bar{
         width: 100%;
@@ -81,6 +83,8 @@ body{
         background-color: rgba(41, 43, 50, 0.9);
         z-index: 3;
         display: none;
+        min-width: 600px;
+        min-height: 1000px;
     }
 
     &__nav-close{
@@ -163,7 +167,7 @@ body{
         }
 
         &--paragraph{
-           width: 400px;
+           
            font-size: 18px;
            line-height: 30px;
            color: @gray-color;
@@ -191,7 +195,7 @@ body{
  
          &--paragraph{
             margin-top: 0;
-            width: 400px;
+            
             font-size: 18px;
             line-height: 30px;
             color: @gray-color;
@@ -735,6 +739,8 @@ body{
 }
 
 @media screen and (max-width: 920px){
+
+    
 
     .portfolio__images{
         margin: 60px auto 60px;
