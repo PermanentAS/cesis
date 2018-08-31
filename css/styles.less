@@ -7,19 +7,27 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    min-width: 600px;
+    // min-width: 600px;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /*  Header  */
 .header{
-    height: 1000px;
+    height: 100vh;
     width: 100vw;
     background-image: url("../img/header-bg.jpg");
     background-size: cover;
     text-align: center;
     color: @white-color;
-    min-width: 600px;
-    min-height: 1000px;
+    // min-width: 600px;
+    // min-height: 1000px;
 
     &__bar{
         width: 100%;
@@ -78,13 +86,13 @@ body{
         left: 0;
         top: 0;
         position: absolute;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         background-color: rgba(41, 43, 50, 0.9);
         z-index: 3;
         display: none;
-        min-width: 600px;
-        min-height: 1000px;
+        // min-width: 600px;
+        // min-height: 1000px;
     }
 
     &__nav-close{
@@ -122,9 +130,7 @@ body{
         transition: all .3s;
     }
 
-    .menu__social i:first-child{
-        margin-left: 50px;
-    }
+    
 
     .menu__social i:hover{
         color: @accent-color;
@@ -683,6 +689,11 @@ body{
 
 
 @media screen and (max-width: 1440px) {
+
+    body{
+        width: 100%;
+    }
+
     .about{
         h2{
             font-size: 40px;
@@ -696,9 +707,12 @@ body{
 }
 
 @media screen and (max-width: 1200px){
+    .header{
+        width: 100%;
+    }
 
     .header__title{
-        margin-top: 100px;
+        margin-top: 30%;
     }
     
     .about{
@@ -709,10 +723,12 @@ body{
             display: flex;
             flex-direction: column;
             margin: 80px auto;
+            width: 100%;
         }
 
         .creative__text ,.video__text{
             margin: 40px auto 120px;
+            width: 100%;
         }
 
         .video__text{
@@ -733,6 +749,16 @@ body{
         margin: 30px 30px 0 30px;
     }
 
+    .touch{
+        .text__description{
+            width: 100%;
+        }
+
+        .text__paragraph{
+            width: 100%;
+        }
+    }
+
     .price{
         padding: 0px 30px 0 30px;
     }
@@ -744,7 +770,17 @@ body{
 
 @media screen and (max-width: 920px){
 
-    
+    .header__menu{
+        margin-top: 30%;
+
+        .menu__item a{
+            font-size: 30px;
+        }
+    }
+
+    .header .menu__social i{
+        font-size: 30px;
+    }
 
     .portfolio__images{
         margin: 60px auto 60px;
@@ -766,6 +802,11 @@ body{
             "eighth" 
             "ninth";
         
+    }
+
+    .portfolio__tabs a{
+        width: 40%;
+        margin: 0;
     }
 
     .touch, .address{
@@ -808,14 +849,32 @@ body{
 }
 
 @media screen and (max-width: 720px){
+    .header{
+        width: 100%;
+    }
 
     .header__title{
-        margin-top: 100px;
-        font-size: 140px;
+        margin-top: 50%;
+        font-size: 50px;
+        line-height: 100px;
+    }
+
+    .about .creative__text--title, .about .video__text--title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .about .creative__text--paragraph, .about .video__text--paragraph{
+        font-size: 14px;
+    }
+
+    .about .video__text--paragraph2{
+        font-size: 12px;
+        padding: 10px;
     }
 
     .header__paragraph{
-        font-size: 20px;
+        font-size: 14px;
         margin-bottom: 50px;
     }
 
@@ -833,5 +892,53 @@ body{
 
     .price .card__title{
         margin: 10px 0;
+    }
+
+    .touch .text__title{
+        font-size: 30px;
+    }
+
+    .touch .text__description{
+        font-size: 14px;
+    }
+
+    .touch .text__paragraph{
+        font-size: 12px;
+    }
+
+    .address__title{
+        font-size: 20px;
+    }
+
+    .address__info{
+        font-size: 14px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+
+        &__subscribe{
+            width: 80%;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            .form__block .form__label{
+                padding-top: 0;
+            }
+        }
+
+        &__copyright{
+            font-size: 10px;
+        }
+
+        &__social{
+            font-size: 12px;
+            text-align: center;
+        }
     }
 }
