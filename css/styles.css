@@ -59,9 +59,16 @@ body {
   border-radius: 35px;
   transition: all .3s;
 }
+.header__button a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .header__button:hover {
   background: #ffffff;
   color: #2a2d2e;
+}
+.header__button:hover a {
+  color: #000;
 }
 .header .down__arrow {
   position: absolute;
